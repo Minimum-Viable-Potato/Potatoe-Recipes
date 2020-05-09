@@ -24,6 +24,8 @@ Overall purpose of the app: To generate potatoe recipes given a list of ingredie
 
 5. As a developer, I want to have all the recipes stored in a seperate js file in order to add additional recipes later on without impacting the selection logic.
 
+<h2> Domain Modeling / Dataframe Diagram </h2>
+
 
 
 
