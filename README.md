@@ -29,7 +29,8 @@ Overall purpose of the app: To generate potatoe recipes given a list of ingredie
 ![dom modeling](DomModelingpic.png)
 ![database](Databasepic.png)
 
-
+<h2>Project Kanban</h2>
+https://github.com/orgs/Minimum-Viable-Potato/projects/1
 
 
 
