@@ -30,6 +30,7 @@ Overall purpose of the app: To generate potatoe recipes given a list of ingredie
 ![database](Databasepic.png)
 
 <h2>Wireframe</h2>
+
 ![wireframe](ProjectWireframe.png)
 
 <h2>Project Kanban</h2>
