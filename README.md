@@ -26,12 +26,12 @@ Overall purpose of the app: To generate potatoe recipes given a list of ingredie
 
 <h2> Domain Modeling / Dataframe Diagram </h2>
 
-![dom modeling](DomainModelingFinal.png)
+![dom modeling](ProjectWireframeFinalFinal.png)
 ![database](Databasepic.png)
 
 <h2>Wireframe</h2>
 
-![wireframe](ProjectWireframeFinalFinal.png)
+![wireframe](ProjectWireframeFinal.png)
 
 <h2>Project Kanban</h2>
 https://github.com/orgs/Minimum-Viable-Potato/projects/1
