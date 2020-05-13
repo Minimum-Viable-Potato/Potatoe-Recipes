@@ -24,10 +24,41 @@
         
         <section id="ingredients">
             <h2>Ingredients</h2>
-            <ul>
-                <li></li>
-            </ul>
+            <form id="catalog">
+                <fieldset>
+                  <legend>Catalog</legend>
+                  <label>
+                    <span>Ingredients</span>
+                    <div id="checkbox">
+                    </div>
+                  </label>
+                  <input type="submit" value="Generate Recipes!" />
+                </fieldset>
+              </form>
             </section>
+
+            <section class="deck col-2">
+                <div class="card">
+                  <div class="copy">
+                    <form id="catalog2">
+                      <fieldset>
+                        <legend>Catalog</legend>
+                        <label>
+                          <span>Item</span>
+                          <select id="items"></select>
+                        </label>
+                        <label>
+                          <span>Quantity</span>
+                          <input id="quantity" type="number" />
+                        </label>
+                        <input type="submit" value="Add To Cart" />
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+                <div class="card" id="cartContents"></div>
+              </section>
+
         <section id = "settings">
             <h2>Settings</h2>
             <ul>
