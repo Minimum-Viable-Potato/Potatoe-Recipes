@@ -1,19 +1,19 @@
-'use strict'
+'use strict';
 
 var ingredientList = [];
 
 //loop to grab all the ingredients from objects
 for (var i=0; i <allRecipes.length; i++){
-    for (var j=0; j<allRecipes[i].ingredients.length; j++){
-        ingredientList.push(allRecipes[i].ingredients[j])
-        console.log(allRecipes[i].ingredients[j])
-    } 
+  for (var j=0; j<allRecipes[i].ingredients.length; j++){
+    ingredientList.push(allRecipes[i].ingredients[j]);
+    console.log(allRecipes[i].ingredients[j]);
+  }
 }
 
 //converts ingredientList into a set and removes duplicates to get a unique set of Ingredients
 
-var uniqIngredList = [...new Set(ingredientList)]
-console.log(uniqIngredList)
+var uniqIngredList = [...new Set(ingredientList)];
+console.log(uniqIngredList);
 
 //render dropdown
 var dropDown = document.getElementById('ingredients_box');
@@ -36,28 +36,28 @@ renderDropDown();
 var selectedIngArr = [];
 
 function listQ(){
-    selectedIngArr.push(this.value);
-    console.log(selectedIngArr);
-    renderCheck();
-  }
-  document.getElementById("ingredients_box").onchange = listQ;
-  
+  selectedIngArr.push(this.value);
+  console.log(selectedIngArr);
+  renderCheck();
+}
+document.getElementById('ingredients_box').onchange = listQ;
+
 
 //Todo: render selectedIngArr as checked boxes underneath dropmenu
 var check = document.getElementById('checkbox');
 function renderCheck() {
 // for (var i = 0; i < selectedIngArr.length; i++) {
-    var checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.name = selectedIngArr[selectedIngArr.length-1];
-    checkbox.value = selectedIngArr[selectedIngArr.length-1];
-    checkbox.id = selectedIngArr[selectedIngArr.length-1];
-    var label = document.createElement('label');
-    label.htmlFor = "id";
-    label.appendChild(document.createTextNode(selectedIngArr[selectedIngArr.length-1]));
-    check.appendChild(checkbox);
-    check.appendChild(label);
-  }
+  var checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.name = selectedIngArr[selectedIngArr.length-1];
+  checkbox.value = selectedIngArr[selectedIngArr.length-1];
+  checkbox.id = selectedIngArr[selectedIngArr.length-1];
+  var label = document.createElement('label');
+  label.htmlFor = 'id';
+  label.appendChild(document.createTextNode(selectedIngArr[selectedIngArr.length-1]));
+  check.appendChild(checkbox);
+  check.appendChild(label);
+}
 
 
 //TODO:create button that removes all checked items from selectedItems array
