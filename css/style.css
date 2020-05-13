@@ -1,0 +1,81 @@
+body{
+    width: 750px;
+    background-color: #eae7dc;
+}
+li {
+    display: inline;
+    padding: 0.5em;
+}
+.nav {
+    color: white;
+    text-align: center;
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:2.5px;
+    background-color: black;
+}
+a:hover{
+    background-color: grey;
+}
+a:visited{
+    color: white;
+}
+#recipes {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #e98074;
+}
+#ingredients {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #8e8d8a;
+}
+#settings {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #e85a4f;
+}
+
+#ingredientsAllRecipes {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #e98074;
+}
+#displayAllRecipes {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #8e8d8a;
+}
+
+#Michelle{
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #e98074;
+}
+#Ryan{
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #8e8d8a;
+}
+#James{
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #e85a4f;
+}
