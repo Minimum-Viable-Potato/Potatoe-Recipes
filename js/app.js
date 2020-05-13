@@ -1,14 +1,17 @@
 'use strict'
 
+var ingredientList = [];
+
 //loop to grab all the ingredients from objects
 for (var i=0; i <allRecipes.length; i++){
     for (var j=0; j<allRecipes[i].ingredients.length; j++){
         ingredientList.push(allRecipes[i].ingredients[j])
-        // console.log(allRecipes[i].ingredients[j])
+        console.log(allRecipes[i].ingredients[j])
     } 
 }
 
 //converts ingredientList into a set and removes duplicates to get a unique set of Ingredients
+
 var uniqIngredList = [...new Set(ingredientList)]
 console.log(uniqIngredList)
 
@@ -25,30 +28,46 @@ function renderDropDown() {
 
 renderDropDown();
 
-
-var itemsArr = ['potato', 'testing', 'potato2'];
 //checkbox renderer
+// var button = document.getElementById('catalog');
+// button.addEventListener('submit', handleSubmit);
+
+//TODO:user selects an item from dropdown and it is added to an array
+var selectedIngArr = [];
+
+function listQ(){
+    selectedIngArr.push(this.value);
+    console.log(selectedIngArr);
+    renderCheck();
+  }
+  document.getElementById("ingredients_box").onchange = listQ;
+  
+
+//Todo: render selectedIngArr as checked boxes underneath dropmenu
 var check = document.getElementById('checkbox');
 function renderCheck() {
-  for (var i = 0; i < itemsArr.length; i++) {
+// for (var i = 0; i < selectedIngArr.length; i++) {
     var checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.name = itemsArr[i];
-    checkbox.value = itemsArr[i];
-    checkbox.id = itemsArr[i];
+    checkbox.name = selectedIngArr[selectedIngArr.length-1];
+    checkbox.value = selectedIngArr[selectedIngArr.length-1];
+    checkbox.id = selectedIngArr[selectedIngArr.length-1];
     var label = document.createElement('label');
     label.htmlFor = "id";
-    label.appendChild(document.createTextNode(itemsArr[i]));
+    label.appendChild(document.createTextNode(selectedIngArr[selectedIngArr.length-1]));
     check.appendChild(checkbox);
     check.appendChild(label);
   }
-}
-renderCheck();
-var button = document.getElementById('catalog');
-button.addEventListener('submit', handleSubmit);
 
 
-// //event listener for click
+//TODO:create button that removes all checked items from selectedItems array
+
+//TODO:render pics of recipes based on selectedItems
+
+
+
+
+//event listener for click
 // function handleClick(event) {
 //     // increment our property 'clicks', and generate two new images
 //     var clickedItem = event.target.title;
@@ -68,5 +87,5 @@ button.addEventListener('submit', handleSubmit);
 //     }
 //     imageGenerator();
 // }
-// //divEl.addEventListener('click', handleClick);
+
 
