@@ -32,7 +32,7 @@ renderDropDown();
 // var button = document.getElementById('catalog');
 // button.addEventListener('submit', handleSubmit);
 
-//TODO:user selects an item from dropdown and it is added to an array
+//DONE:user selects an item from dropdown and it is added to an array
 var selectedIngArr = [];
 
 function listQ(){
@@ -40,11 +40,13 @@ function listQ(){
   console.log(selectedIngArr);
   renderCheck();
   renderPics();
+  saveLocalStorage();
 }
 document.getElementById('ingredients_box').onchange = listQ;
+// document.getElementById('ingredients_box').onchange = saveLocalStorage();
 
 
-//Todo: render selectedIngArr as checked boxes underneath dropmenu
+//DONE: render selectedIngArr as checked boxes underneath dropmenu
 var check = document.getElementById('checkbox');
 function renderCheck() {
 // for (var i = 0; i < selectedIngArr.length; i++) {
@@ -63,9 +65,16 @@ function renderCheck() {
 
 //TODO:create button that removes all checked items from selectedItems array
 
-//TODO:render pics of recipes based on selectedItems
 
-// declare a var El linking js to displayRecipes html element
+//TODO: add selected items to local storage
+
+function saveLocalStorage(){
+//  var convertedItems = JSON.stringify(selectedIngArr);
+  localStorage.clear();
+  var convertedItems = selectedIngArr;
+  localStorage.setItem('selected potatoes', convertedItems);
+  console.log(convertedItems);
+}
 
 
 var El = document.getElementById('displayRecipes');
@@ -73,10 +82,10 @@ var El = document.getElementById('displayRecipes');
 function renderPics(){
   // declare a counter variable equal to El's # of child elements
   var count = El.childElementCount
-  for (var i =0; i<=count; i++){
+  for (var i =0; i<count; i++){
     El.removeChild(El.childNodes[0]);
-    console.log(count)
-    console.log(i)
+    // console.log(count)
+    // console.log(i)
   }
   for (var i=0; i<allRecipes.length; i++){
     //TODO: James provide source attribute for below logic
