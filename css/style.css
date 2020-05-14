@@ -58,24 +58,31 @@ a:visited{
     background-color: #8e8d8a;
 }
 
-#Michelle{
+#Michelle {
     width: 230px;
     float: left;
     margin:5px;
     padding:5px;
     background-color: #e98074;
+    text-align: center;
 }
-#Ryan{
+#bios img {
+    height: 120px;
+    width: 100px;
+}
+#Ryan {
     width: 230px;
     float: left;
     margin:5px;
     padding:5px;
     background-color: #8e8d8a;
+    text-align: center;
 }
-#James{
+#James {
     width: 230px;
     float: left;
     margin:5px;
     padding:5px;
     background-color: #e85a4f;
+    text-align: center;
 }
