@@ -86,3 +86,13 @@ a:visited{
     background-color: #e85a4f;
     text-align: center;
 }
+
+#displayRecipes img {
+    height: 120px;
+    width: 100px;
+}
+
+#displayAllRecipes img {
+    height: 120px;
+    width: 100px;
+}

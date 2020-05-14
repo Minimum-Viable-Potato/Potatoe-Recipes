@@ -6,14 +6,14 @@ var ingredientList = [];
 for (var i=0; i <allRecipes.length; i++){
   for (var j=0; j<allRecipes[i].ingredients.length; j++){
     ingredientList.push(allRecipes[i].ingredients[j]);
-    console.log(allRecipes[i].ingredients[j]);
+    // console.log(allRecipes[i].ingredients[j]);
   }
 }
 
 //converts ingredientList into a set and removes duplicates to get a unique set of Ingredients
 
 var uniqIngredList = [...new Set(ingredientList)];
-console.log(uniqIngredList);
+// console.log(uniqIngredList);
 
 //render dropdown
 var dropDown = document.getElementById('ingredients_box');
@@ -39,6 +39,7 @@ function listQ(){
   selectedIngArr.push(this.value);
   console.log(selectedIngArr);
   renderCheck();
+  renderPics();
 }
 document.getElementById('ingredients_box').onchange = listQ;
 
@@ -63,6 +64,33 @@ function renderCheck() {
 //TODO:create button that removes all checked items from selectedItems array
 
 //TODO:render pics of recipes based on selectedItems
+
+// declare a var El linking js to displayRecipes html element
+
+
+var El = document.getElementById('displayRecipes');
+
+function renderPics(){
+  // declare a counter variable equal to El's # of child elements
+  var count = El.childElementCount
+  for (var i =0; i<=count; i++){
+    El.removeChild(El.childNodes[0]);
+    console.log(count)
+    console.log(i)
+  }
+  for (var i=0; i<allRecipes.length; i++){
+    //TODO: James provide source attribute for below logic
+    if (selectedIngArr.every(function(val) { return allRecipes[i].ingredients.indexOf(val) >= 0; })){
+        var imgEl = document.createElement('img');
+        var aEl = document.createElement('a');
+        imgEl.src = allRecipes[i].picpage;
+        aEl.href = allRecipes[i].webpage;
+        aEl.textContent = allRecipes[i].name;
+        El.appendChild(imgEl);
+        El.appendChild(aEl);
+        }
+    }
+}
 
 
 
