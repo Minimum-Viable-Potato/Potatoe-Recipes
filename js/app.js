@@ -69,9 +69,8 @@ function renderCheck() {
 //TODO: add selected items to local storage
 
 function saveLocalStorage(){
-//  var convertedItems = JSON.stringify(selectedIngArr);
   localStorage.clear();
-  var convertedItems = selectedIngArr;
+  var convertedItems = JSON.stringify(selectedIngArr);
   localStorage.setItem('selected potatoes', convertedItems);
   console.log(convertedItems);
 }
