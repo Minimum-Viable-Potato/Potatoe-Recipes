@@ -22,41 +22,42 @@ a:hover{
 a:visited{
     color: white;
 }
-#displayRecipes img {
+
+
+#displayAllRecipes img {
     height: 120px;
     width: 100px;
 }
-#MVP {
+#ingredientsAllRecipes {
+    width: 200px;
+    float: right;
+    margin-top: 5px;
+    margin-right:25px;
+    padding:5px;
+    background-color: #e98074;
+}
+#displayAllRecipes {
+    width: 400px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #8e8d8a;
+}
+#MVP2 {
     text-align: center;
 	font: 60px Helvetica, Sans-Serif;
 	letter-spacing: -5px;
 	color: rgba(0,0,255,0.5); 
 }
 
-#MVP:after {
-	content: "Most Viable Potato";
-	position: absolute; left: 170px; top: 35px;
+#MVP2:after {
+	content: "All Recipes";
+	position: absolute; left: 255px; top: 35px;
 	color: rgba(255,0,0,0.5);   
 }
-
-#recipes {
-    width: 400px;
-    float: left;
-    margin:5px;
-    padding:5px;
-    background-color: #e98074;
-}
-#ingredients {
-    width: 250px;
-    float: right;
-    margin-top: 5px;
-    margin-right:25px;
-    padding:5px;
-    background-color: #8e8d8a;
-}
-
-a {
+.module {
+    cursor: url('/image/MVP.png'), auto;	
+  }
+  a {
     padding: 20px;
 }
-
-

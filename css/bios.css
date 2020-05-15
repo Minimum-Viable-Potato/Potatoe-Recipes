@@ -1,0 +1,56 @@
+body{
+    width: 750px;
+    background-color: #eae7dc;
+    cursor: url(/image/MVP.png), default;
+
+}
+li {
+    display: inline;
+    padding: 0.5em;
+}
+.nav {
+    color: white;
+    text-align: center;
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:2.5px;
+    background-color: black;
+}
+a:hover{
+    background-color: grey;
+}
+a:visited{
+    color: white;
+}
+#Michelle {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #e98074;
+    text-align: center;
+}
+#bios img {
+    height: 120px;
+    width: 100px;
+}
+#Ryan {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #8e8d8a;
+    text-align: center;
+}
+#James {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #e85a4f;
+    text-align: center;
+}
+.module {
+    cursor: url('/image/MVP.png')
+  }
