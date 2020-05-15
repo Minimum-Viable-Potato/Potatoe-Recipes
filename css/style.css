@@ -1,13 +1,15 @@
 body{
     width: 750px;
     background-color: #eae7dc;
+    
 }
 li {
     display: inline;
     padding: 0.5em;
 }
 .nav {
-    color: white;
+    color: rgb(214, 134, 80);
+    font-family: monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
     text-align: center;
     width: 230px;
     float: left;
@@ -15,77 +17,50 @@ li {
     padding:2.5px;
     background-color: black;
 }
-a:hover{
-    background-color: grey;
-}
 a:visited{
-    color: white;
+    color: rgb(214, 134, 80);
 }
+#displayRecipes img {
+    height: 120px;
+    width: 100px;
+}
+#MVP {
+    text-align: center;
+	font: 60px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(138, 138, 179, 0.5);  
+}
+
+#MVP:after {
+	content: "Most Viable Potato";
+	position: absolute; left: 170px; top: 35px;
+	color: rgba(255,0,0,0.5);   
+}
+
 #recipes {
-    width: 230px;
+    width: 400px;
     float: left;
     margin:5px;
     padding:5px;
     background-color: #e98074;
 }
 #ingredients {
-    width: 300px;
-    float: left;
-    margin:5px;
+    width: 250px;
+    float: right;
+    margin-top: 5px;
+    margin-right:25px;
     padding:5px;
     background-color: #8e8d8a;
 }
 
-#ingredientsAllRecipes {
-    width: 230px;
-    float: left;
-    margin:5px;
-    padding:5px;
-    background-color: #e98074;
+a {
+    padding: 20px;
 }
-#displayAllRecipes {
-    width: 230px;
-    float: left;
-    margin:5px;
-    padding:5px;
-    background-color: #8e8d8a;
+a:before {
+    content: "\A";
+}
+a:after {
+    content: "\A";
+    white-space: pre;
 }
 
-#Michelle {
-    width: 230px;
-    float: left;
-    margin:5px;
-    padding:5px;
-    background-color: #e98074;
-    text-align: center;
-}
-#bios img {
-    height: 120px;
-    width: 100px;
-}
-#Ryan {
-    width: 230px;
-    float: left;
-    margin:5px;
-    padding:5px;
-    background-color: #8e8d8a;
-    text-align: center;
-}
-#James {
-    width: 230px;
-    float: left;
-    margin:5px;
-    padding:5px;
-    background-color: #e85a4f;
-    text-align: center;
-}
-
-#displayRecipes img {
-    height: 120px;
-    width: 100px;
-}
-
-#displayAllRecipes img {
-    height: 120px;
-    width: 100px;
-}

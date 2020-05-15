@@ -43,17 +43,13 @@ function listQ(){
   firstTime++;
   renderCheck();
   renderPics();
-  
 }
-
 
 document.getElementById('ingredients_box').onchange = listQ;
 // document.getElementById('ingredients_box').onchange = saveLocalStorage();
 
-
 //DONE: render selectedIngArr as checked boxes underneath dropmenu
 var check = document.getElementById('checkbox');
-
 
 function renderCheck() { 
   //check local storage, if nothing exits user has not previously accessed page
@@ -86,10 +82,6 @@ function renderCheck() {
     check.appendChild(label);
   }
 }
-
-
-
-
 
 //TODO: add selected items to local storage
 //selected ingridents to save to local storage
