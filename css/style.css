@@ -29,18 +29,11 @@ a:visited{
     background-color: #e98074;
 }
 #ingredients {
-    width: 230px;
+    width: 300px;
     float: left;
     margin:5px;
     padding:5px;
     background-color: #8e8d8a;
-}
-#settings {
-    width: 230px;
-    float: left;
-    margin:5px;
-    padding:5px;
-    background-color: #e85a4f;
 }
 
 #ingredientsAllRecipes {

@@ -5,11 +5,11 @@ var ingredientList = [];
 //loop to grab all the ingredients from objects
 for (var i=0; i <allRecipes.length; i++){
   for (var j=0; j<allRecipes[i].ingredients.length; j++){
-    ingredientList.push(allRecipes[i].ingredients[j]);
-    
+    ingredientList.push(allRecipes[i].ingredients[j].toLowerCase());
   }
 }
-console.log(ingredientList);
+
+ingredientList.sort();
 
 //converts ingredientList into a set and removes duplicates to get a unique set of Ingredients
 
@@ -55,10 +55,11 @@ document.getElementById('ingredients_box').onchange = listQ;
 var check = document.getElementById('checkbox');
 
 
-function renderCheck() {
+function renderCheck() { 
+  //check local storage, if nothing exits user has not previously accessed page
   if (localStorage.getItem('selected potatoes') && (firstTime === 1)){
     selectedIngArr = loadLocalStorage();
-    
+    //renders checklist based on all selected ingredients in "selectedIngArr" if the first time counter = 1, and if there is anything in local storage
     for (var i = 0; i<selectedIngArr.length; i++){
       var checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
@@ -72,7 +73,7 @@ function renderCheck() {
       check.appendChild(label);
     }
   }else{
-
+  //renders checklist based on selected ingredients, nothing in local storage.. will remove last item selected to avoid duplicates
     var checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.name = selectedIngArr[selectedIngArr.length-1];
@@ -87,38 +88,36 @@ function renderCheck() {
 }
 
 
-//TODO:create button that removes all checked items from selectedItems array
+
 
 
 //TODO: add selected items to local storage
-
+//selected ingridents to save to local storage
 function saveLocalStorage(){
+  //"clear" wipe local storage and stores current process to avoid duplicates
   localStorage.clear();
   var convertedItems = JSON.stringify(selectedIngArr);
   localStorage.setItem('selected potatoes', convertedItems);
   console.log(convertedItems);
 }
-
+//call local storage to add to current files
 function loadLocalStorage(){
-  var localStorageItems = JSON.parse(localStorage.getItem('selected potatoes'))
-  return localStorageItems
+  var localStorageItems = JSON.parse(localStorage.getItem('selected potatoes'));
+  return localStorageItems;
 }
 
 
 var El = document.getElementById('displayRecipes');
-
+//use local storage to idetinfy selected ingredients and render 
 function renderPics(){
-  
   if (localStorage.getItem('selected potatoes')){
-    console.log(`local storage exists in render pic function`)
+    console.log(`local storage exists in render pic function`);
     selectedIngArr = loadLocalStorage();
   }
 
-  var count = El.childElementCount
+  var count = El.childElementCount;
   for (var i =0; i<count; i++){
     El.removeChild(El.childNodes[0]);
-    // console.log(count)
-    // console.log(i)
   }
 
   for (var i=0; i<allRecipes.length; i++){
@@ -131,32 +130,28 @@ function renderPics(){
       aEl.textContent = allRecipes[i].name;
       El.appendChild(imgEl);
       El.appendChild(aEl);
-    }else{
-      if(El.childElementCount===0){
-      var pEl= document.createElement("p");
-      pEl.textContent = "Sorry...No Recipes with those Ingredient Found"
-      El.appendChild(pEl);
-      }
     }
   }
+if(El.childElementCount === 0){
+  var pEl= document.createElement("p");
+  pEl.textContent = "Sorry...No Recipes with those Ingredient Found";
+  El.appendChild(pEl);
+}
 }
 
+//done:create button that removes all checked items from selectedItems array
 function removebutton(event){
-  localStorage.clear()
-  console.log("remove button logic was applied")
+  localStorage.clear();
+  console.log("remove button logic was applied");
 }
 
 document.getElementById('removeBtn').addEventListener('click', removebutton);
 
 var firstTime=0;
-//load page with localStorage information, if applicable
+//load page with localStorage information, will determine if user has accessed this page.
 if (localStorage.getItem('selected potatoes')){
   selectedIngArr = loadLocalStorage();
-
-  console.log(`initial load from local storage: ${selectedIngArr}`);
   firstTime = 1;
   renderCheck();
-  console.log(`initial renderCheck from local storage`);
   renderPics();
-  
 }
