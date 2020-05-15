@@ -141,6 +141,7 @@ if(El.childElementCount === 0){
 
 //done:create button that removes all checked items from selectedItems array
 function removebutton(event){
+  console.log(event);f
   localStorage.clear();
   console.log("remove button logic was applied");
 }
