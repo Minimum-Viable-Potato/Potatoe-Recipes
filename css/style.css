@@ -1,14 +1,15 @@
 body{
     width: 750px;
     background-color: #eae7dc;
-    cursor: url(/image/MVP.png), auto;
+    
 }
 li {
     display: inline;
     padding: 0.5em;
 }
 .nav {
-    color: white;
+    color: rgb(214, 134, 80);
+    font-family: monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
     text-align: center;
     width: 230px;
     float: left;
@@ -16,11 +17,8 @@ li {
     padding:2.5px;
     background-color: black;
 }
-a:hover{
-    background-color: grey;
-}
 a:visited{
-    color: white;
+    color: rgb(214, 134, 80);
 }
 #displayRecipes img {
     height: 120px;
@@ -30,7 +28,7 @@ a:visited{
     text-align: center;
 	font: 60px Helvetica, Sans-Serif;
 	letter-spacing: -5px;
-	color: rgba(0,0,255,0.5); 
+	color: rgba(138, 138, 179, 0.5);  
 }
 
 #MVP:after {
@@ -58,5 +56,11 @@ a:visited{
 a {
     padding: 20px;
 }
-
+a:before {
+    content: "\A";
+}
+a:after {
+    content: "\A";
+    white-space: pre;
+}
 
