@@ -123,12 +123,13 @@ function renderPics(){
       El.appendChild(imgEl);
       El.appendChild(aEl);
     }
+
+    if(El.childElementCount === 0){
+      var pEl= document.createElement("p");
+      pEl.textContent = "Sorry...No Recipes with those Ingredient Found";
+      El.appendChild(pEl);
+    }
   }
-if(El.childElementCount === 0){
-  var pEl= document.createElement("p");
-  pEl.textContent = "Sorry...No Recipes with those Ingredient Found";
-  El.appendChild(pEl);
-}
 }
 
 //done:create button that removes all checked items from selectedItems array
