@@ -33,7 +33,6 @@ a:after {
     content: "\A";
     white-space: pre;
 }
-
 #MVP {
     text-align: center;
 	font: 60px Helvetica, Sans-Serif;
@@ -72,5 +71,6 @@ a:after {
     height: 120px;
     width: 100px;
     padding: 10px;
+    border-radius: 10%;
 }
 

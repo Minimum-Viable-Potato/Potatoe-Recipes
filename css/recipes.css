@@ -1,5 +1,6 @@
 body {
     width: 750px;
+    height: 800px;
     background-color: #eae7dc;
 }
 nav{
@@ -81,4 +82,5 @@ li {
     height: 120px;
     width: 100px;
     padding: 10px;
+    border-radius: 10%;
 }
