@@ -87,7 +87,7 @@ function renderCheck() {
 //selected ingridents to save to local storage
 function saveLocalStorage(){
   //"clear" wipe local storage and stores current process to avoid duplicates
-  localStorage.clear();
+  localStorage.removeItem('selected potatoes')
   var convertedItems = JSON.stringify(selectedIngArr);
   localStorage.setItem('selected potatoes', convertedItems);
   console.log(convertedItems);
@@ -133,8 +133,8 @@ if(El.childElementCount === 0){
 
 //done:create button that removes all checked items from selectedItems array
 function removebutton(event){
-  console.log(event);f
-  localStorage.clear();
+  console.log(event);
+  localStorage.removeItem('selected potatoes');
   console.log("remove button logic was applied");
 }
 

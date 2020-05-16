@@ -52,10 +52,24 @@ function clearIngredients(){
 function handleClick(event){
     var clickedRecipe= event.target.currentSrc;
     console.log(clickedRecipe)
+    localStorage.removeItem('Recipe Details')
+    var convertedItems = JSON.stringify(clickedRecipe);
+    localStorage.setItem('Recipe Details', convertedItems);
     clearIngredients();
-    renderRecipeDetails(clickedRecipe); 
+    renderRecipeDetails(clickedRecipe);
+     
 }
 
 
 recipeOptions();
 recipeDisplay.addEventListener('click', handleClick);
+
+var firstTime_allRecipes=0;
+//load page with localStorage information, will determine if user has accessed this page.
+if (localStorage.getItem('Recipe Details')){
+console.log("local storage triggered from navigating back to this page")
+  var localStorageRecipeDetails = JSON.parse(localStorage.getItem('Recipe Details'));
+  var selectedRecipeDetails = localStorageRecipeDetails;
+  firstTime_allRecipes = 1;
+  renderRecipeDetails(selectedRecipeDetails);
+}
