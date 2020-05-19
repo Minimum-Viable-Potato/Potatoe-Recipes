@@ -1,14 +1,14 @@
-'use strict'
+'use strict';
 
 var allRecipes = [];
 
 function Recipe(name,webpage,picpage,ingredients){
-    this.name = name;
-    this.webpage = webpage;
-    this.picpage = picpage;
-    this.ingredients = ingredients;
+  this.name = name;
+  this.webpage = webpage;
+  this.picpage = picpage;
+  this.ingredients = ingredients;
 
-    allRecipes.push(this);
+  allRecipes.push(this);
 
 }
 
@@ -59,8 +59,8 @@ new Recipe ('Potato skin burgers','https://www.delish.com/cooking/recipe-ideas/r
 new Recipe ('Lemon and Parsley Skillet-Roasted Fingerling Potatoes','https://www.bonappetit.com/recipe/lemon-and-parsley-skillet-roasted-fingerling-potatoes','https://assets.bonappetit.com/photos/57acd77053e63daf11a4da93/16:9/w_2560,c_limit/lemon-and-parsley-skillet-roasted-fingerling-potatoes.jpg',['lemon juice','salt','butter','parsley','salt'])
 
 function createElement(element, content, parent){
-    var newElement = document.createElement(element);
-    newElement.textContent = content;
-    parent.appendChild(newElement);
-    return newElement;
+  var newElement = document.createElement(element);
+  newElement.textContent = content;
+  parent.appendChild(newElement);
+  return newElement;
 }
