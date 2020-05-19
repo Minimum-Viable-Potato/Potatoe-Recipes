@@ -112,6 +112,8 @@ function loadLocalStorage(){
 }
 
 
+
+
 var El = document.getElementById('displayRecipes');
 //use local storage to idetinfy selected ingredients and render 
 function renderPics(){
