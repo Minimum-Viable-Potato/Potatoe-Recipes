@@ -2,9 +2,13 @@ body{
     width: 750px;
     background-color: #eae7dc;
 }
-li {
+.nav li {
     display: inline;
     padding: 0.5em;
+}
+nav{
+    position: fixed;
+    top: 0;
 }
 .nav {
     color: rgb(214, 134, 80);
@@ -14,11 +18,16 @@ li {
     float: left;
     margin:5px;
     padding:2.5px;
-    background-color: d8c3a5;
+    background-color: black;
 }
-
 a:visited{
-    color: rgb(214, 134, 80);
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+#bios {
+    margin-top: 50px;
 }
 #Michelle {
     width: 230px;
@@ -31,6 +40,7 @@ a:visited{
 #bios img {
     height: 120px;
     width: 100px;
+    border-radius: 5%;
 }
 #Ryan {
     width: 230px;
