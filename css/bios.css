@@ -19,6 +19,7 @@ nav{
     margin:5px;
     padding:2.5px;
     background-color: black;
+    border-radius: 3%;
 }
 a:visited{
     color: white;

@@ -115,25 +115,28 @@ function renderPics(){
     El.removeChild(El.childNodes[0]);
   }
 
-  for (var i=0; i<allRecipes.length; i++){
-    if (selectedIngArr.every(function(val) { return allRecipes[i].ingredients.indexOf(val) >= 0; })){
-      var imgEl = document.createElement('img');
-      var aEl = document.createElement('a');
-      imgEl.src = allRecipes[i].picpage;
-      aEl.href = allRecipes[i].webpage;
-      aEl.textContent = allRecipes[i].name;
-      El.appendChild(imgEl);
-      El.appendChild(aEl);
-    }
-    // if no recipes are displayed then return message "sorry.."
-    if(El.childElementCount === 0){
-      var pEl= document.createElement('p');
-      pEl.textContent = "Sorry...No Recipes with those Ingredient Found";
-      El.appendChild(pEl);
+   // if no recipes are displayed then return message "sorry.."
+  if(check.childElementCount === 0){
+    var pEl= document.createElement('p');
+    pEl.textContent = "Sorry...No Recipes with those Ingredient Found";
+    El.appendChild(pEl);
+  }
+
+  if(check.childElementCount >= 1){
+ 
+    for (var i=0; i<allRecipes.length; i++){
+      if (selectedIngArr.every(function(val) { return allRecipes[i].ingredients.indexOf(val) >= 0; })){
+        var imgEl = document.createElement('img');
+        var aEl = document.createElement('a');
+        imgEl.src = allRecipes[i].picpage;
+        aEl.href = allRecipes[i].webpage;
+        aEl.textContent = allRecipes[i].name;
+        El.appendChild(imgEl);
+        El.appendChild(aEl);
+      }
     }
   }
 }
-
 //done:create button that removes all checked items from selectedItems array
 
 // onclick, remove all checked items from the selected ingredients
