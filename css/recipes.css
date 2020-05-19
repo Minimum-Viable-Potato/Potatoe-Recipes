@@ -52,8 +52,8 @@ li {
 	font: 60px Helvetica, Sans-Serif;
 	letter-spacing: -5px;
     color: rgba(138, 138, 179, 0.5); 
-
    }
+
 #MVP2:after {
 	content: "All Recipes";
 	position: absolute; left: 250px; top: 38px;

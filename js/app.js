@@ -182,7 +182,7 @@ function generateSelectionsArr(){
     checkboxSelectionsArr.push(checkboxvalue);
     // console.log(checkboxSelectionsArr);
   }
-  return checkboxSelectionsArr
+  return checkboxSelectionsArr;
 }
 
 
@@ -231,11 +231,11 @@ function reRenderCheck(){
   checkbox.name = selectedIngArr[i];
   checkbox.value = selectedIngArr.length;
   checkbox.id = "check" + selectedIngArr.length;
-  console.log('firsttime'+checkbox.id, selectedIngArr)
+  console.log('firsttime'+checkbox.id, selectedIngArr);
   checkbox.className = 'checkboxitem';
   var label = document.createElement('label');
   label.htmlFor = 'id';
-  label.className = 'label'
+  label.className = 'label';
   label.appendChild(document.createTextNode(selectedIngArr[i]));
   check.appendChild(checkbox);
   check.appendChild(label);
