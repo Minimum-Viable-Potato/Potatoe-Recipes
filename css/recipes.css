@@ -21,6 +21,7 @@ nav {
     margin: 5px;
     padding:2.5px;
     background-color: black;
+    border-radius: 3%;
 }
 
 a:visited{
@@ -67,7 +68,8 @@ li {
     margin-right: 25px;
     padding: 5px;
     background-color: #e98074;   
-    position: fixed; 
+    position: fixed;
+    border-radius: 1%
 }
 #displayAllRecipes {
     width: 400px;
@@ -77,6 +79,7 @@ li {
     padding:50px;
     background-color: #8e8d8a;
     overflow: scroll;
+    border-radius: 1%
 }
 #displayAllRecipes img {
     height: 120px;
