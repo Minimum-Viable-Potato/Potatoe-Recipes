@@ -1,0 +1,68 @@
+body{
+    width: 750px;
+    background-color: #eae7dc;
+}
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+.nav {
+    color: white;
+    font-family: monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    text-align: center;
+    width: 230px;
+    float: left;
+    margin: 5px;
+    padding:2.5px;
+    background-color: black;
+}
+a:visited{
+    color: white;
+}
+#displayAllRecipes img {
+    height: 120px;
+    width: 100px;
+    padding: 10px;
+}
+#MVP2 {
+    text-align: center;
+	font: 60px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+    color: rgba(138, 138, 179, 0.5); 
+   }
+#MVP2:after {
+	content: "All Recipes";
+	position: absolute; left: 255px; top: 35px;
+    color: rgba(255,0,0,0.5);   
+   }
+#ingredientsAllRecipes {
+    width: 200px;
+    float: right;
+    margin-top: 5px;
+    margin-left: 520px;
+    margin-right: 25px;
+    padding: 5px;
+    background-color: #e98074;   
+    position: fixed; 
+}
+#displayAllRecipes {
+    width: 400px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #8e8d8a;
+}
+a {
+    padding: 20px;
+}
+a:link{
+    color:blue;
+}
+a:before {
+    content: "\A";
+}
+a:after {
+    content: "\A";
+    white-space: pre;
+}

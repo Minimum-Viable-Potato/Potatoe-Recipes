@@ -1,0 +1,50 @@
+body{
+    width: 750px;
+    background-color: #eae7dc;
+}
+li {
+    display: inline;
+    padding: 0.5em;
+}
+.nav {
+    color: rgb(214, 134, 80);
+    font-family: monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    text-align: center;
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:2.5px;
+    background-color: d8c3a5;
+}
+
+a:visited{
+    color: rgb(214, 134, 80);
+}
+#Michelle {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:2.5px;
+    background-color: #e98074;
+    text-align: center;
+}
+#bios img {
+    height: 120px;
+    width: 100px;
+}
+#Ryan {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:2.5px;
+    background-color: #8e8d8a;
+    text-align: center;
+}
+#James {
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:2.55px;
+    background-color: #e85a4f;
+    text-align: center;
+}

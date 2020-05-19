@@ -1,0 +1,120 @@
+body{
+    width: 750px;
+    background-color: #eae7dc;
+    
+}
+li {
+    display: inline;
+    padding: 0.5em;
+}
+.nav {
+    color: white;
+    font-family: monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    text-align: center;
+    width: 230px;
+    float: left;
+    margin:5px;
+    padding:2.5px;
+    background-color: black;
+}
+a:visited{
+    color: white;
+}
+#displayRecipes img {
+    height: 120px;
+    width: 100px;
+}
+#MVP {
+    text-align: center;
+	font: 60px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(138, 138, 179, 0.5);  
+}
+
+#MVP:after {
+	content: "Most Viable Potato";
+	position: absolute; left: 170px; top: 35px;
+	color: rgba(255,0,0,0.5);   
+}
+
+#recipes {
+    width: 400px;
+    float: left;
+    margin:5px;
+    padding:5px;
+    background-color: #e98074;
+}
+#ingredients {
+    width: 250px;
+    float: right;
+    margin-top: 5px;
+    margin-right:25px;
+    padding:5px;
+    background-color: #8e8d8a;
+}
+
+a {
+    padding: 20px;
+}
+a:before {
+    content: "\A";
+}
+a:after {
+    content: "\A";
+    white-space: pre;
+}
+
+#removeBtn {
+    padding: 5px 15px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+  }
+  
+#removBtn:hover {background-color: #3e8e41}
+
+#removeBtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Source of code: https://blog.hubspot.com/website/css-fade-in */
+.fade-in{
+
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }

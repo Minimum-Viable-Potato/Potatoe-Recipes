@@ -1,35 +1,44 @@
+<!DOCTYPE html>
+
 <head>
     <link href="css/reset.css" type= "text/css" rel= "stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" type="text/css" rel="stylesheet">
     <link href="css/style.css" type= "text/css" rel= "stylesheet" />
-    <title> Potatoe Recipes </title>
+    <title> Potato Recipes </title>
 </head>
 <body>
     <nav>
         <ul>
-            <li class = "nav"><a href="index.html"><img src="https://via.placeholder.com/200x70/000000/FFFFFF/?text=Home"></a></li>
-            <li class = "nav"><a href="all_recipes.html"><img src="https://via.placeholder.com/200x70/000000/FFFFFF/?text='All Recipes'"></a></li>
-            <li class = "nav"><a href="about_me.html"><img src="https://via.placeholder.com/200x70/000000/FFFFFF/?text=Team"></a></li>
+            <li class = "nav"><a href="index.html">Home</a></li>
+            <li class = "nav"><a href="all_recipes.html">All Recipes</a></li>
+            <li class = "nav"><a href="about_me.html">Team</a></li>
         </ul>
             </nav>
     <main id="Home">
+        <h1 id="MVP">Most Viable Potato</h1>
         <section id="recipes">
-            <h2>Recipes</h2>
+            <h2>Recipes based on the ingredients selected:</h2>
             
-            <section id = "displayRecipes">
-                <img src="" alt="">
-                <link rel="stylesheet" href="">
-            </section>
+            <section id = "displayRecipes"></section>
         </section>
         
-        <section id="ingredients">
-            <h2>Ingredients</h2>
-            <ul>
-                <li></li>
-            </ul>
-            </section>
+        <section>
+            <form id="ingredients">
+                <fieldset>
+                  <legend>Ingredients</legend>
+                  <p>Please select up to 10 ingredients you would like from the dropdown:</p>
+                  <select id = "ingredients_box">
+                  <option value="" disabled selected hidden>Choose ingredient</option></select>
+                  <label>
+                    <span><p>Ingredients</p></span>
+                    <div id="checkbox">
+                    </div>
+                  </label>
+                  <button id = "removeBtn">Remove Items!</button>
+                </fieldset>
+            </form>        
         <section id = "settings">
-            <h2>Settings</h2>
+            <h2></h2>
             <ul>
                 <li></li>
             </ul>
@@ -37,8 +46,8 @@
         </section>
         
     </main>
-    <script src = js/app.js></script>
-    <script src = js/catalog.js></script>   
+    <script src = js/catalog.js type="text/javascript"></script>   
+    <script src = js/app.js type="text/javascript"></script>
     
 </body>
 
