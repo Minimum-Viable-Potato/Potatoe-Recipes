@@ -19,6 +19,7 @@ nav{
     margin:5px;
     padding:2.5px;
     background-color: black;
+    border-radius: 3%;
 }
 a:visited{
     color: white;
@@ -57,6 +58,7 @@ a:after {
     padding:5px;
     background-color: #8e8d8a;
     position: fixed;
+    border-radius: 1%;
 }
 #recipes {
     width: 400px;
@@ -66,6 +68,7 @@ a:after {
     padding:20px;
     background-color: #e98074;
     overflow: scroll;
+    border-radius: 1%
 }
 #displayRecipes img {
     height: 120px;
