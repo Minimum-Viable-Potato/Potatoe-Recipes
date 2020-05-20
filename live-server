@@ -1,0 +1,75 @@
+2fc32d1 Ryan Geddes 12 minutes ago - Merge pull request #17 from Minimum-Viable-Potato/feature_css
+a6de30a Ryan Geddes 12 minutes ago - Merge branch 'development' into feature_css
+2e1c5ae Ryan Geddes 15 minutes ago - Merge pull request #15 from Minimum-Viable-Potato/feature_checkboxcancel
+10c660f Ryan Geddes 17 minutes ago - Merge branch 'development' into feature_checkboxcancel
+56b4cfc Ryan Geddes 26 minutes ago - added app.js before merging to dev
+092002c Ryan Geddes 2 days ago - got checkbox clearing individual checkboxes feature to work
+146e3b0 Michelle Salazar 2 days ago - update css styling
+1408491 Michelle Salazar 2 days ago - update styling
+e3970a4 jawanggit 2 days ago - Merge pull request #14 from Minimum-Viable-Potato/feature_localstorage_allrecipes
+8ab4250 James Wang 2 days ago - updated local storage for all recipes
+1b54424 jawanggit 2 days ago - Merge pull request #13 from Minimum-Viable-Potato/feature_css
+a73e43d jawanggit 2 days ago - Merge pull request #12 from Minimum-Viable-Potato/feature_localstorage_allrecipes
+42ade91 Michelle Salazar 2 days ago - update css
+18ff7b0 Michelle Salazar 2 days ago - update recipes
+a00105f Michelle Salazar 2 days ago - Merge branch 'development' of https://github.com/Minimum-Viable-Potato/Potatoe-Recipes into feature_css
+958128c Michelle Salazar 2 days ago - update recipe list, css
+1b10713 James Wang 2 days ago - localstorage on all_recipes page
+1358b4c jawanggit 3 days ago - Merge pull request #11 from Minimum-Viable-Potato/feature_css
+d62cf7a jawanggit 3 days ago - Merge branch 'development' into feature_css
+21f5b20 jawanggit 3 days ago - Merge pull request #10 from Minimum-Viable-Potato/feature_allrecipespage
+54eca94 James Wang 3 days ago - updated bio, allrecipes page
+2f4ee5f Michelle Salazar 4 days ago - update css
+1a17eed Michelle Salazar 4 days ago - css styling, update fonts, spaing between images and add additional css pages.
+6783bb4 Michelle Salazar 4 days ago - update dropdown list
+1e6a07b Michelle Salazar 4 days ago - Merge pull request #9 from Minimum-Viable-Potato/feature_localstorage
+7685be1 James Wang 4 days ago - localstorage completed
+a05fe8b James Wang 5 days ago - fixed bug with pic rendering
+d5cacc3 jawanggit 5 days ago - Merge pull request #8 from Minimum-Viable-Potato/feature_reciperender
+ca61804 Ryan Geddes 5 days ago - 5-13 end of night commit, local storage started
+d30a47f Ryan Geddes 5 days ago - finished MVP except for local storage
+6301f6b Ryan Geddes 5 days ago - Merge pull request #7 from Minimum-Viable-Potato/bioMIS
+3c165b4 Michelle Salazar 6 days ago - CSS styling, add miSalz bio
+64cae1a Michelle Salazar 6 days ago - Merge pull request #6 from Minimum-Viable-Potato/feature_checklistv2
+f85316c James Wang 6 days ago - rendering checklist
+a3f9f68 jawanggit 6 days ago - Merge pull request #5 from Minimum-Viable-Potato/MS_Css
+39a2010 James Wang 6 days ago - update
+4f5d150 Michelle Salazar 6 days ago - MSalz update css styling
+6b07ca9 jawanggit 6 days ago - Merge pull request #4 from Minimum-Viable-Potato/feature_all_recipes
+f4a6d27 James Wang 6 days ago - added DropDown functionality
+7aacc81 Michelle Salazar 6 days ago - relocate image files
+f649ad3 jawanggit 7 days ago - Update README.md
+51911e4 jawanggit 7 days ago - Update README.md
+1539110 jawanggit 7 days ago - Add files via upload
+547bb99 jawanggit 7 days ago - Update README.md
+e1e7057 jawanggit 7 days ago - Merge pull request #3 from Minimum-Viable-Potato/feature_all_recipes
+1aa662e James Wang 7 days ago - updated files
+8d3587d jawanggit 7 days ago - Merge pull request #2 from Minimum-Viable-Potato/feature_all_recipes
+b802f89 James Wang 7 days ago - updated code with Recipe constructor
+b7c53c3 jawanggit 7 days ago - Update README.md
+1d643a1 jawanggit 7 days ago - Add files via upload
+d431214 jawanggit 7 days ago - Update README.md
+76f47ea jawanggit 7 days ago - Update README.md
+8e39a95 jawanggit 7 days ago - Add files via upload
+0b6e55f jawanggit 7 days ago - Delete Project Wireframe_v2.png
+8595602 jawanggit 7 days ago - Add files via upload
+b1940a3 jawanggit 7 days ago - Update README.md
+5071c1f jawanggit 7 days ago - Update README.md
+cf5b296 jawanggit 7 days ago - Add files via upload
+7a589ef jawanggit 7 days ago - Add files via upload
+28ce0d8 jawanggit 7 days ago - Update README.md
+757fb37 jawanggit 7 days ago - Update README.md
+3dbc88f jawanggit 7 days ago - Add files via upload
+fe7342b James Wang 7 days ago - added css file in css folder
+0395d96 James Wang 8 days ago - create recipe objects
+bebde67 James Wang 8 days ago - scaffolding
+20fb9a9 jawanggit 9 days ago - Update README.md
+9bbca84 Michelle Salazar 9 days ago - Update README.md
+083dd05 Michelle Salazar 9 days ago - Update README.md
+4b43a4e Michelle Salazar 9 days ago - Update README.md
+9b0d2aa jawanggit 9 days ago - Update README.md
+46a1bc8 Michelle Salazar 9 days ago - add pictures
+0a51a5f jawanggit 9 days ago - Update README.md
+14d168a James Wang 11 days ago - basic files added
+ad44b71 jawanggit 2 weeks ago - features that James came up with
+d4fea95 jawanggit 2 weeks ago - Initial commit
