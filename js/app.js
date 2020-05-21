@@ -25,6 +25,7 @@ function renderDropDown() {
     option.textContent = uniqIngredList[k];
     dropDown.appendChild(option);
   }
+  
 }
 
 renderDropDown();
@@ -42,6 +43,8 @@ function listQ(){
   firstTime++;
   renderCheck();
   renderPics();
+  window.location.reload();
+   
 }
 
 document.getElementById('ingredients_box').onchange = listQ;
@@ -115,27 +118,38 @@ function renderPics(){
     El.removeChild(El.childNodes[0]);
   }
 
-   // if no recipes are displayed then return message "sorry.."
+   // if no ingredients exist then display message "sorry.."
   if(check.childElementCount === 0){
+    var pEl= document.createElement('p');
+    pEl.textContent = "Sorry...No Recipes with those Ingredient Found";
+    El.appendChild(pEl);
+  } else if (check.childElementCount >= 1){
+ 
+      for (var i=0; i<allRecipes.length; i++){
+        if (selectedIngArr.every(function(val) { return allRecipes[i].ingredients.indexOf(val) >= 0; })){
+          var imgEl = document.createElement('img');
+          var aEl = document.createElement('a');
+          imgEl.src = allRecipes[i].picpage;
+          aEl.href = allRecipes[i].webpage;
+          aEl.target = "_blank";
+          aEl.textContent = allRecipes[i].name;
+          El.appendChild(imgEl);
+          El.appendChild(aEl);
+        }
+      }
+    }
+
+  if((El.childElementCount ===1) && (check.childElementCount ===0)){
+    El.removeChild(El.childNodes[0]);
+  }else if((El.childElementCount > 1) && (check.childElementCount > 0)){
+    return;
+  }else{
     var pEl= document.createElement('p');
     pEl.textContent = "Sorry...No Recipes with those Ingredient Found";
     El.appendChild(pEl);
   }
 
-  if(check.childElementCount >= 1){
- 
-    for (var i=0; i<allRecipes.length; i++){
-      if (selectedIngArr.every(function(val) { return allRecipes[i].ingredients.indexOf(val) >= 0; })){
-        var imgEl = document.createElement('img');
-        var aEl = document.createElement('a');
-        imgEl.src = allRecipes[i].picpage;
-        aEl.href = allRecipes[i].webpage;
-        aEl.textContent = allRecipes[i].name;
-        El.appendChild(imgEl);
-        El.appendChild(aEl);
-      }
-    }
-  }
+
 }
 //done:create button that removes all checked items from selectedItems array
 
