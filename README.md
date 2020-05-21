@@ -26,7 +26,7 @@ Overall purpose of the app: To generate potatoe recipes given a list of ingredie
 
 <h2> Domain Modeling / Dataframe Diagram </h2>
 
-![dom modeling](image/ProjectWireframeFinalFinal.png)
+![dom modeling](image/DataModel_Final.png)
 ![database](image/Databasepic.png)
 
 <h2>Wireframe</h2>
