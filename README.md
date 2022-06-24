@@ -2,6 +2,9 @@
 
 This app was created by Ryan Geddes, Michelle Salazar, and James Wang.
 
+Deployed Link:
+https://minimum-viable-potato.github.io/Potatoe-Recipes/index.html
+
 Overall purpose of the app: To generate potatoe recipes given a list of ingredients
 
 <h2> Key Features: </h2>
